@@ -1,0 +1,15 @@
+{
+  "name": "amxmodx-plugin-phoogi",
+  "version": "1.0.0",
+  "description": "Modified version of the original PhooGi kreedz plugin for kz-endo",
+  "scripts": {
+    "build": "node build"
+  },
+  "repository": "bitbucket:tenub/amxmodx-plugin-phoogi",
+  "author": "Joseph Chrzan",
+  "license": "ISC",
+  "dependencies": {
+    "amxmodx-build": "tenub/amxmodx-build#feature-5068-dependencies"
+  },
+  "private": true
+}

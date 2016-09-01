@@ -9,10 +9,10 @@ enum _:CURLData
 	CURLBuffer[512]
 };
 
-plugin_init()
+public plugin_init()
 {
 	register_plugin("CURL test", "1.0", "pvab");
-	set_task(1.0, "CheckRecordFake");
+	set_task(5.0, "CheckRecordFake");
 }
 
 public CheckRecordFake()
@@ -31,6 +31,8 @@ public CheckRecordFake()
 
 		new url[192];
 		formatex(url, 191, "https://%s%s?type_id=eq.%d&map=eq.%s&authid=eq.%s", APIHost, APIPath, type_id, map, authid);
+
+		log_amx(url);
 
 		new data[CURLData];
 
